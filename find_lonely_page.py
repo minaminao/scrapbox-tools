@@ -14,7 +14,7 @@ out_deg = {}
 page_titles = set([page["title"] for page in pages])
 
 # 現状外部リンクも含んでいる
-pattern = re.compile(r"(\[[^\*/\$\-!][^\]]+\]|#[^\s]+)")
+pattern = re.compile(r"(\[[^\*/\$\-!][^\]]*\]|#[^\s]+)")
 
 for page in pages:
     title = page["title"]
