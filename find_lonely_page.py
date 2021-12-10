@@ -1,7 +1,7 @@
-import sys
-from pathlib import Path
 import json
 import re
+import sys
+from pathlib import Path
 
 assert len(sys.argv) == 2, f"Usage: python {sys.argv[0]} <json>"
 

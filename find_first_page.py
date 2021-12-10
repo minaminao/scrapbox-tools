@@ -1,14 +1,13 @@
-import sys
-from pathlib import Path
 import json
+import sys
 import time
+from pathlib import Path
 
 assert len(sys.argv) == 2, f"Usage: python {sys.argv[0]} <json>"
 
 filename = sys.argv[1]
 filepath = Path(filename)
 pages = json.load(filepath.open())["pages"]
-
 
 min_created = None
 first_page_title = None
@@ -19,5 +18,3 @@ for page in pages:
         first_page_title = page["title"]
 
 print(first_page_title, time.localtime(min_created))
-    
-
