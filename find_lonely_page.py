@@ -17,7 +17,7 @@ normalized_title_to_title = {}
 
 def normalize_title(title: str):
     global normalize_title_to_title
-    normalized_title = title.lower()
+    normalized_title = title.lower().replace("_", " ")
     normalized_title_to_title[normalized_title] = title
     return normalized_title
 
