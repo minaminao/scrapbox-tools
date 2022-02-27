@@ -11,7 +11,7 @@ for i in range(N):
         v = links[i].strip().split("//", 1)
         v[-1] = urllib.parse.quote(v[-1])
         url = "//".join(v)
-        print(links[i])
+        print(links[i].strip())
         webbrowser.open(url)
 
 with open("result.txt", "w") as f:
