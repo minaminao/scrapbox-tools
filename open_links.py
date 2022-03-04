@@ -1,5 +1,5 @@
-import webbrowser
 import urllib.parse
+import webbrowser
 
 links = open("result.txt").readlines()[:-1]
 
